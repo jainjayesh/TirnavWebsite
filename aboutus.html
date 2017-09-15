@@ -11,31 +11,14 @@
         <link href="css/lightbox.css" rel="stylesheet"> 
         <link href="css/animate.min.css" rel="stylesheet"> 
         <link href="css/main.css" rel="stylesheet">
-        <link href="css/responsive.css" rel="stylesheet">
-
-        <!--[if lt IE 9]>
-                <script src="js/html5shiv.js"></script>
-                <script src="js/respond.min.js"></script>
-        <![endif]-->       
+        <link href="css/responsive.css" rel="stylesheet">     
         <link rel="shortcut icon" href="images/favicon.png">
     </head><!--/head-->
 
     <body>
-        <header id="header">      
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 overflow">
-                        <div class="social-icons pull-right">
-                            <ul class="nav nav-pills">
-                                <li><a href=""><img src="images/facebook.png" alt=""/></a></li>
-                                <li><a href=""><img src="images/linkedin.png" alt=""/></a></li>
-                            </ul>
-                        </div> 
-                    </div>
-                </div>
-            </div>
+        <header id="header">   
             <div class="navbar navbar-inverse" role="banner">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                             <span class="sr-only">Toggle navigation</span>
@@ -78,6 +61,13 @@
                                 </ul>				
                             </li>
                             <li class="active"><a href="aboutus.html">About</a></li>
+                            <li>
+                                <div class="content">
+                                    <div class="buttons">
+                                        <div id="two" class="button careers-menu">Careers</div>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </div>                             
                 </div>
@@ -116,64 +106,58 @@
             </div>
         </section>
 
-        <section id="feature" class="feature-area section-padding">
+        <!-- Our team Section -->
+        <section id="team" class="team content-section">
             <div class="container">
-                <div class="row">
+                <div class="row text-center">
                     <div class="col-md-12">
-                        <div class="section-title text-center">
-                            <h2 class="welcome-text font-heading">Vision and Mission</h2>
-                        </div>
-                    </div>
-                </div>
-                <!-- /end section-title row -->
-                <div class="row">
-                    <div class="col-md-5 col-md-offset-1 col-sm-6">
-                        <div class="single-feature">
-                            <div class="feature-icon">
-                                <i class="fa fa-home"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h4>Vision 1</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, obcaecati officia optio, amet eius beatae.</p>
-                            </div>
-                        </div>
-                        <div class="single-feature">
-                            <div class="feature-icon">
-                                <i class="fa fa-home"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h4>Vision 2</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, obcaecati officia optio, amet eius beatae.</p>
-                            </div>
-                        </div>
+                        <h2 class="text-center welcome-text font-heading">Our Team</h2>
+                        <h3 class="caption gray">Meet the people who make awesome stuffs</h3>
+                    </div><!-- /.col-md-12 -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="team-member">
+                                    <figure>
+                                        <img src="" alt="" class="img-responsive">
+                                        <figcaption>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae asperiores mollitia.</p>
+                                            <ul>
+                                                <li><a href=""><i class="fa fa-facebook fa-2x"></i></a></li>
+                                                <li><a href=""><i class="fa fa-twitter fa-2x"></i></a></li>
+                                                <li><a href=""><i class="fa fa-linkedin fa-2x"></i></a></li>
+                                            </ul>
+                                        </figcaption>
+                                    </figure>
+                                    <h4>Lauren Cox</h4>
+                                    <p>Creative Director</p>
+                                </div><!-- /.team-member-->
+                            </div><!-- /.col-md-4 -->
 
-                    </div>
-                    <!-- /end col-md-5 -->
-                    <div class="col-md-5 col-sm-6">
-                        <div class="single-feature">
-                            <div class="feature-icon">
-                                <i class="fa fa-home"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h4>Mission 1</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, obcaecati officia optio, amet eius beatae.</p>
-                            </div>
-                        </div>
-                        <div class="single-feature">
-                            <div class="feature-icon">
-                                <i class="fa fa-home"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h4>Mission 2</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, obcaecati officia optio, amet eius beatae.</p>
-                            </div>
-                        </div>
-                        <!-- /end single-feature -->
-                    </div>
-                    <!-- /end col-md-6 -->
-                </div>
-            </div>
-        </section>
+                            <div class="col-md-6">
+                                <div class="team-member">
+                                    <figure>
+                                        <img src="" alt="" class="img-responsive">
+                                        <figcaption>
+                                            <p>Neque minima ea, a praesentium saepe nihil maxime quod esse numquam explicabo eligendi.</p>
+                                            <ul>
+                                                <li><a href=""><i class="fa fa-facebook fa-2x"></i></a></li>
+                                                <li><a href=""><i class="fa fa-twitter fa-2x"></i></a></li>
+                                                <li><a href=""><i class="fa fa-linkedin fa-2x"></i></a></li>
+                                            </ul>
+                                        </figcaption>
+                                    </figure>
+                                    <h4>Jessie Barnett</h4>
+                                    <p>UI/UX Designer</p>
+                                </div><!-- /.team-member-->
+                            </div><!-- /.col-md-4 -->    
+                        </div><!-- /.row -->
+                    </div><!-- /.container -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.our-team -->
+
+
         <!--/#services-->
 
         <section id="action" class="responsive">
@@ -183,19 +167,22 @@
                         <div class="action take-tour">
                             <div class="col-sm-6 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
                                 <h1 class="title">How can we help you create high-impact solutions?</h1>
-                                <button type="button" class="btn btn-info btn-common btn-contact" data-toggle="modal" data-target="#myModal">Contact Now</button>
+                                <div class="content">
+                                    <div class="buttons">
+                                        <div id="one" class="button">Contact Now</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--/#action-->
-        <!-- Modal -->
-        <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
+
+
+        <div id="modal-container">
+            <div class="modal-background">
+                <div class="modal">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <h4 class="modal-title">Please Feel Free To Write Us</h4>
@@ -244,7 +231,7 @@
                 </div>
             </div>
         </div>
-
+        <!--/#action-->
 
         <footer class="footer-area section-padding footer-padding">
             <div class="container">
@@ -278,7 +265,7 @@
                                 </p>  
                             </div>
                         </div>
-                        <div class="col-md-12 footer-info" style="padding: 20px 20px 15px;">
+                        <div class="col-md-12 footer-info" style="padding:0">
                             <p>Copyright © 2017 <a href="#">Tirnav Solutions</a> All Rights Reserved</p>
                         </div>
                     </div>
@@ -305,6 +292,16 @@
                             $(this).toggleClass('open');
                         }
                 );
+            });
+            $('.button').click(function () {
+                var buttonId = $(this).attr('id');
+                $('#modal-container').removeAttr('class').addClass(buttonId);
+                $('body').addClass('modal-active');
+            });
+
+            $('.close').click(function () {
+                $('#modal-container').addClass('out');
+                $('body').removeClass('modal-active');
             });
         </script>
     </body>
