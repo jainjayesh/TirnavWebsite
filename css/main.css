@@ -160,7 +160,7 @@ h3{
     margin-bottom: 0;
     padding: 0;
     width: 100%;
-    height: 80px;
+    height: 75px;
     background-size: 100%;
     padding-bottom: 13px;
     position: fixed;
@@ -2966,7 +2966,7 @@ span.stButton_gradient,
     color:#FFF!important;
 }
 .footer-area {
-    background-color: #333;
+    background-color: #181a1a;
     color: #FFF;
 }
 .footer-logo h4,
