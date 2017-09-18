@@ -9,92 +9,23 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link href="css/animate.min.css" rel="stylesheet"> 
+        <link href="css/font-mfizz.css" rel="stylesheet"> 
         <link href="css/lightbox.css" rel="stylesheet"> 
         <link href="css/main.css" rel="stylesheet">
         <link href="css/responsive.css" rel="stylesheet">   
         <link rel="shortcut icon" href="images/favicon.png">
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script>
+            $(function () {
+                $("#header").load("header.html");
+                $("#footer").load("footer.html");
+            });
+        </script> 
     </head>
     <!--/head-->
     <body>
-        <header id="header">
-            <div class="navbar navbar-inverse" role="banner">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-
-                        <a class="navbar-brand" href="index.html">
-                            <h1><img src="images/logo.png" alt="logo"></h1>
-                        </a>
-
-                    </div>
-                    <div class="collapse navbar-collapse">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="active"><a href="index.html">Home</a></li> 
-                            <li class="dropdown mega-dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <span class="fa fa-angle-down"></span></a>				
-                                <ul class="dropdown-menu mega-dropdown-menu">
-                                    <li class="col-sm-6">
-                                        <ul class="p-a-0">
-                                            <li class="dropdown-header"><a href="technological-service.html"><i class="fa fa-desktop" aria-hidden="true"></i> Technological Services</a></li>
-                                            <li class="divider"></li>
-                                        </ul>
-                                        <div class="col-md-6">
-                                            <ul class="p-a-0">
-                                                <li><a class="p-a-0" href="technological-service.html#website-designing"><i class="fa fa-hand-o-right fa-hand-color" aria-hidden="true"></i> Website Designing</a></li>
-                                                <li><a class="p-a-0" href="technological-service.html#web-mobile-app-development"><i class="fa fa-hand-o-right fa-hand-color" aria-hidden="true"></i> Web and Mobile App Development</a></li>
-                                                <li><a class="p-a-0" href="technological-service.html#website-designing"><i class="fa fa-hand-o-right fa-hand-color" aria-hidden="true"></i> Website Designing</a></li>
-                                                <li><a class="p-a-0" href="technological-service.html#web-mobile-app-development"><i class="fa fa-hand-o-right fa-hand-color" aria-hidden="true"></i> Web and Mobile App Development</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-6">                                           
-                                            <ul class="p-a-0">
-                                                <li><a class="p-a-0" href="technological-service.html#digital-marketing"><i class="fa fa-hand-o-right fa-hand-color" aria-hidden="true"></i> Digital Marketing</a></li>
-                                                <li><a class="p-a-0" href="technological-service.html#animation-video-creation"><i class="fa fa-hand-o-right fa-hand-color" aria-hidden="true"></i> Animation and Video Creation</a></li>
-                                                <li><a class="p-a-0" href="technological-service.html#website-designing"><i class="fa fa-hand-o-right fa-hand-color" aria-hidden="true"></i> Website Designing</a></li>
-                                                <li><a class="p-a-0" href="technological-service.html#web-mobile-app-development"><i class="fa fa-hand-o-right fa-hand-color" aria-hidden="true"></i> Web and Mobile App Development</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="col-sm-6">
-                                        <ul class="p-a-0">
-                                            <li class="dropdown-header"><a href="financial-service.html"><i class="fa fa-money" aria-hidden="true"></i> Financial Services</a></li>
-                                            <li class="divider"></li>
-                                        </ul>
-                                        <div class="col-md-6">
-                                            <ul class="p-a-0">
-                                                <li><a class="p-a-0" href="financial-service.html#llp-llc-registration"><i class="fa fa-hand-o-right fa-hand-color" aria-hidden="true"></i> LLP/ LLC Partnership Registration</a></li>
-                                                <li><a class="p-a-0" href="financial-service.html#erp-accounting"><i class="fa fa-hand-o-right fa-hand-color" aria-hidden="true"></i> ERP Accounting</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <ul class="p-a-0" >
-                                                <li><a class="p-a-0" href="financial-service.html#gst-file-return"><i class="fa fa-hand-o-right fa-hand-color" aria-hidden="true"></i> GST File Return</a></li>
-                                                <li><a class="p-a-0" href="financial-service.html#audit-services"><i class="fa fa-hand-o-right fa-hand-color" aria-hidden="true"></i> Audit Services</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>				
-                            </li>
-                            <li><a href="aboutus.html">About Us</a></li>
-                            <li>
-                                <div class="content">
-                                    <div class="buttons">
-                                        <div id="two" class="button careers-menu">Careers</div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>                    
-                </div>
-            </div>
-        </header>
+        <div id="header"></div>  
         <!--/#header-->
-
         <div class="container-fluid" style="padding: 0;">
             <div id="carousel-example-generic" class="carousel slide">
                 <!-- Indicators -->
@@ -103,10 +34,8 @@
                     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
                 </ol>
-
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
-
                     <!-- First slide -->
                     <div class="item active banner1">
 
@@ -119,7 +48,6 @@
                             </h3>
                         </div>
                     </div> <!-- /.item -->
-
                     <!-- Second slide -->
                     <div class="item banner2">
                         <div class="carousel-caption">                            
@@ -151,8 +79,6 @@
             </div><!-- /.carousel -->
 
         </div><!-- /.container -->
-
-        <!--/#home-slider-->
 
         <section class="services">
             <div class="container">
@@ -187,9 +113,6 @@
             </div>
         </section>
 
-        <!--/#features-->
-
-        <!--/#services-->
         <section id="company-information" class="choose">
             <div class="container">
                 <div class="row">
@@ -211,48 +134,48 @@
             </div>
         </section>
 
-        <section id="features" class="col-md-12 about">
+        <section class="platforms">
             <h2 class="text-center welcome-text font-heading">Technologies we know</h2>
-            <div class="col-md-12 col-sm-12 col-xs-12"  style="padding: 0 120px;">
+            <div class="col-md-12 col-sm-12 col-xs-12 slider-space">
                 <div id="Carousel" class="carousel slide logo-slider">                   
                     <!-- Carousel items -->
                     <div class="carousel-inner">
                         <div class="item active">
                             <div class="row">
-                                <div class="col-md-3 col-xs-4"><a href="" class="thumbnail"><img src="images/java.png" alt="Image" style="height:80px;"></a></div>
-                                <div class="col-md-3 col-xs-4"><a href="" class="thumbnail"><img src="images/php.png" alt="Image" style="height:80px;"></a></div>
-                                <div class="col-md-3 col-xs-4"><a href="" class="thumbnail"><img src="images/spring.png" alt="Image" style="height:80px;"></a></div>
-                                <div class="col-md-3 col-xs-4"><a href="" class="thumbnail"><img src="images/springboot.png" alt="Image" style="height:80px;"></a></div>
+                                <div class="col-md-3 col-xs-6"><a href="" class="thumbnail tech-width"><img src="images/java.png" alt="Image" style="height:80px;"></a></div>
+                                <div class="col-md-3 col-xs-6"><a href="" class="thumbnail tech-width"><img src="images/php.png" alt="Image" style="height:80px;"></a></div>
+                                <div class="col-md-3 col-xs-6"><a href="" class="thumbnail tech-width"><img src="images/spring.png" alt="Image" style="height:80px;"></a></div>
+                                <div class="col-md-3 col-xs-6"><a href="" class="thumbnail tech-width"><img src="images/springboot.png" alt="Image" style="height:80px;"></a></div>
                             </div><!--.row-->
                         </div><!--.item-->
 
                         <div class="item">
                             <div class="row">
-                                <div class="col-md-3 col-xs-4"><a href="" class="thumbnail"><img src="images/android.png" alt="Image" style="height:80px;"></a></div>
-                                <div class="col-md-3 col-xs-4"><a href="" class="thumbnail"><img src="images/ios.png" alt="Image" style="height:80px;"></a></div>
-                                <div class="col-md-3 col-xs-4"><a href="" class="thumbnail"><img src="images/adobe.png" alt="Image" style="height:80px;"></a></div>
-                                <div class="col-md-3 col-xs-4"><a href="" class="thumbnail"><img src="images/apache.png" alt="Image" style="height:80px;"></a></div>
+                                <div class="col-md-3 col-xs-6"><a href="" class="thumbnail tech-width"><img src="images/android.png" alt="Image" style="height:80px;"></a></div>
+                                <div class="col-md-3 col-xs-6"><a href="" class="thumbnail tech-width"><img src="images/ios.png" alt="Image" style="height:80px;"></a></div>
+                                <div class="col-md-3 col-xs-6"><a href="" class="thumbnail tech-width"><img src="images/adobe.png" alt="Image" style="height:80px;"></a></div>
+                                <div class="col-md-3 col-xs-6"><a href="" class="thumbnail tech-width"><img src="images/apache.png" alt="Image" style="height:80px;"></a></div>
                             </div><!--.row-->
                         </div><!--.item-->
 
                         <div class="item">
                             <div class="row">
-                                <div class="col-md-3 col-xs-4"><a href="" class="thumbnail"><img src="images/laravel.png" alt="Image" style="height:80px;"></a></div>
-                                <div class="col-md-3 col-xs-4"><a href="" class="thumbnail"><img src="images/angularjs.png" alt="Image" style="height:80px;"></a></div>
-                                <div class="col-md-3 col-xs-4"><a href="" class="thumbnail"><img src="images/bootstrap.png" alt="Image" style="height:80px;"></a></div>
-                                <div class="col-md-3 col-xs-4"><a href="" class="thumbnail"><img src="images/javafx.png" alt="Image" style="height:80px;"></a></div>
+                                <div class="col-md-3 col-xs-6"><a href="" class="thumbnail tech-width"><img src="images/laravel.png" alt="Image" style="height:80px;"></a></div>
+                                <div class="col-md-3 col-xs-6"><a href="" class="thumbnail tech-width"><img src="images/angularjs.png" alt="Image" style="height:80px;"></a></div>
+                                <div class="col-md-3 col-xs-6"><a href="" class="thumbnail tech-width"><img src="images/bootstrap.png" alt="Image" style="height:80px;"></a></div>
+                                <div class="col-md-3 col-xs-6"><a href="" class="thumbnail tech-width"><img src="images/javafx.png" alt="Image" style="height:80px;"></a></div>
                             </div>
                         </div>
                     </div>
-                    <!-- Left and right controls -->
-                    <a class="left carousel-control slider-tech" href="#Carousel" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control slider-tech" href="#Carousel" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                    <!--                     Left and right controls 
+                                        <a class="left carousel-control slider-tech" href="#Carousel" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control slider-tech" href="#Carousel" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>-->
                 </div>
             </div>
         </section>
@@ -278,209 +201,6 @@
             </div>
         </section>
         <!--/#company-information-->
-
-        <section id="action" class="responsive">
-            <div class="vertical-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="action take-tour">
-                            <div class="col-sm-6 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                                <h1 class="title">How can we help you create high-impact solutions?</h1>
-                                <div class="content">
-                                    <div class="buttons">
-                                        <div id="one" class="button">Contact Now</div>
-                                    </div>
-                                </div>
-                                <!--<button type="button" class="btn btn-info btn-common btn-contact" data-toggle="modal" data-target="#myModal">Contact Now</button>-->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <div id="modal-container">
-            <div class="modal-background">
-                <div class="modal">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Please Feel Free To Write Us</h4>
-                    </div>
-                    <div class="col-md-12 modal-body">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="usr">Name</label>
-                                <input type="text" class="form-control" id="usr">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="usr">Email ID</label>
-                                <input type="text" class="form-control" id="usr">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="usr">Contact No.</label>
-                                <input type="text" class="form-control" id="usr">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="usr">Inquiry About</label>
-                                <select class="form-control">
-                                    <option>Web Designing</option>
-                                    <option>Web and Mobile App Development</option>
-                                    <option>Digital Marketing</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label for="comment">Message</label>
-                                <textarea class="form-control" rows="3" id="comment"></textarea>
-                            </div> 
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <input name="submit" class="btn btn-submit" value="Submit" type="submit" style="width: 150px;">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--/#action-->
-        <footer class="footer-area section-padding footer-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h2 class="footer-heading">Our Office locations</h2>
-                        <div class="col-md-12 footer-info footer-line">
-                            <div class="col-md-4">
-                                <h3>Address 1</h3>
-                                <p style="color: #FFF;"><i class="fa fa-map-marker" aria-hidden="true" style="font-size: 20px; padding-right: 2px;"></i> 
-                                    6,Ground Floor,Sunder Bhavan <br/>
-                                    Bhuleshwar Road,Kalbadevi <br/>
-									Mumbai - 400002
-                                </p>
-                                <!--<p class="text-white">                                    
-                                    <i class="fa fa-phone" style="font-size: 18px;"></i> <a href="tel:+919823380660">+91 9823380660</a> , <a href="tel:02352-230967">+91 2352230967</a>
-                                    <br>
-                                    <i class="fa fa-envelope"></i> <a href="mailto:test@test.com">test@test.com</a>  
-                                </p> -->  
-                            </div>
-
-                            <div class="col-md-4">
-                                <h3>Address 1</h3>
-                                <p style="color: #FFF;"><i class="fa fa-map-marker" aria-hidden="true" style="font-size: 20px; padding-right: 2px;"></i> 
-                                    304,Mona Complex <br/>
-                                    Jakat Naka,Agashi Road  <br/>
-									Virar-W 401303 
-                                </p>
-                                <!--<p class="text-white">                                    
-                                    <i class="fa fa-phone" style="font-size: 18px;"></i> <a href="tel:+919823380660">+91 9823380660</a> , <a href="tel:02352-230967">+91 2352230967</a>
-                                    <br>
-                                    <i class="fa fa-envelope"></i> <a href="mailto:test@test.com">test@test.com</a>  
-                                </p>  --> 
-                            </div>
-							<div class="col-md-4">
-                                <p class="text-white">                                    
-                                    <i class="fa fa-phone" style="font-size: 18px;"></i> <a href="tel:+919823380660">+91 9860571681</a>
-                                    <br>
-                                    <i class="fa fa-envelope"></i> <a href="mailto:test@test.com">sales@tirnav.in</a>  
-                                </p>  
-                            </div>
-                        </div>
-                        <div class="col-md-12 footer-info" style="padding:0;font-size: x-small;">
-                            <p>Copyright © 2017 <a href="#">Tirnav Solutions</a> All Rights Reserved</p>
-                        </div>
-                    </div>
-                    <!-- / footer-logo , footer-social-links and footer info area -->
-                </div>
-            </div>
-        </footer>
-        <!--/#footer-->
-
-        <script type="text/javascript" src="js/jquery.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/lightbox.min.js"></script>
-        <script type="text/javascript" src="js/wow.min.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>   
-        <script>
-            $(document).ready(function () {
-                $(".dropdown").hover(
-                        function () {
-                            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).slideDown("400");
-                            $(this).toggleClass('open');
-                        },
-                        function () {
-                            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).slideUp("400");
-                            $(this).toggleClass('open');
-                        }
-                );
-            });
-            $('.button').click(function () {
-                var buttonId = $(this).attr('id');
-                $('#modal-container').removeAttr('class').addClass(buttonId);
-                $('body').addClass('modal-active');
-            })
-
-            $('.close').click(function () {
-                $('#modal-container').addClass('out');
-                $('body').removeClass('modal-active');
-            });
-            $(document).ready(function () {
-                $('#Carousel').carousel({
-                    interval: 3000
-                })
-            });
-            /* Demo Scripts for Bootstrap Carousel and Animate.css article
-             * on SitePoint by Maria Antonietta Perna
-             */
-            $(document).ready(function () {
-                $('#carousel-example-generic').carousel({
-                    interval: 3000
-                })
-            });
-            (function ($) {
-
-                //Function to animate slider captions 
-                function doAnimations(elems) {
-                    //Cache the animationend event in a variable
-                    var animEndEv = 'webkitAnimationEnd animationend';
-
-                    elems.each(function () {
-                        var $this = $(this),
-                                $animationType = $this.data('animation');
-                        $this.addClass($animationType).one(animEndEv, function () {
-                            $this.removeClass($animationType);
-                        });
-                    });
-                }
-
-                //Variables on page load 
-                var $myCarousel = $('#carousel-example-generic'),
-                        $firstAnimatingElems = $myCarousel.find('.item:first').find("[data-animation ^= 'animated']");
-
-                //Initialize carousel 
-                $myCarousel.carousel();
-
-                //Animate captions in first slide on page load 
-                doAnimations($firstAnimatingElems);
-
-                //Pause carousel  
-                $myCarousel.carousel('pause');
-
-
-                //Other slides to be animated on carousel slide event 
-                $myCarousel.on('slide.bs.carousel', function (e) {
-                    var $animatingElems = $(e.relatedTarget).find("[data-animation ^= 'animated']");
-                    doAnimations($animatingElems);
-                });
-
-            })(jQuery);
-        </script>
+        <div id="footer"></div>
     </body>
 </html>
